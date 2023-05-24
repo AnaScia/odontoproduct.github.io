@@ -1,12 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
   background-color: #ecfcff;
 }
+
+/* nav */
 
 nav {
   background-color: #3edbf0;
@@ -18,9 +23,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* max-width: 1000px; */
-  /* line-height: 80px; */
-  /* z-index:100; */
 }
 
 .links {
@@ -36,7 +38,7 @@ nav {
   padding: 0px 40px;
   font-size: 15px;
   margin: 0 10px;
-  line-height: 60px;
+  line-height: 80px;
   text-transform: uppercase;
   width: max-content;
 }
@@ -48,7 +50,7 @@ nav {
 
 .nav__logo {
   font-size: 200%;
-  color: #77acf1;
+  color: #009eff;
   font-family: sans-serif;
   text-decoration: none;
   font-weight: bold;
@@ -62,4 +64,38 @@ nav {
 .show-links {
   height: 10rem;
   /* al hacer click en el boton  */
+}
+
+/* SECTION */
+.item__image {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.section__container {
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #c0edf3;
+}
+
+.item__title {
+  margin: 20px;
+}
+
+.item__price {
+  margin: 20px;
 }
