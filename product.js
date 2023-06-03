@@ -1,12 +1,12 @@
 // let navList = document.querySelector(".nav__list");
-let toggle = document.querySelector(".nav__toggle");
-let links = document.querySelector(".links");
+// let toggle = document.querySelector(".nav__toggle");
+// let links = document.querySelector(".links");
 
-toggle.addEventListener("click", () => {
-  // al hacer click en la flecha..
-  toggle.classList.toggle("rotate"); //la flecha rota hacia arriba
-  links.classList.toggle("active"); //la lista aparece
-});
+// toggle.addEventListener("click", () => {
+//   // al hacer click en la flecha..
+//   toggle.classList.toggle("rotate"); //la flecha rota hacia arriba
+//   links.classList.toggle("active"); //la lista aparece
+// });
 
 let rowProduct = document.querySelector(".cart__items");
 
@@ -42,9 +42,10 @@ productsList.addEventListener("click", (e) => {
     if (exits) {
       const products = allProducts.map((product) => {
         if (product.title === infoProduct.title) {
-          product.quantity++;
+          product.quantity++; //si existe solo lo suma al producto existente
           return product;
         } else {
+          //si no existe agrega el producto
           return product;
         }
       });
@@ -58,13 +59,16 @@ productsList.addEventListener("click", (e) => {
   }
 });
 
-rowProduct.addEventListener("click", () => {
+rowProduct.addEventListener("click", (e) => {
   if (e.target.classList.contains("cart__remove")) {
-    const product = e.target.parentElement;
-    const title = product.querySelector("p").textContent;
+    //solo se elimina si se hace click en icono de eliminar
+    const product = e.target.parentElement; //obtenemos toda la tarjeta producto
+    const title = product.querySelector("span").textContent;
 
     allProducts = allProducts.filter((product) => product.title !== title);
     console.log(allProducts);
+
+    showHTML();
   }
 });
 
