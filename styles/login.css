@@ -1,0 +1,39 @@
+/* My Account */
+
+.section__container-account {
+  padding: 40px;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.form__account {
+  margin: 20px;
+  text-align: center;
+}
+
+.form__info {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #c0edf3;
+}
+
+.form__div {
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+}
+
+p {
+  font-size: small;
+}
