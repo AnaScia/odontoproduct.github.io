@@ -11,6 +11,7 @@ btnLogin.addEventListener("click", (e) => {
     password: passLog.value,
   };
   console.log(data1);
+  window.location.href = "./index.html";
 });
 
 //REGISTER
