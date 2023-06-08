@@ -1,13 +1,3 @@
-// let navList = document.querySelector(".nav__list");
-// let toggle = document.querySelector(".nav__toggle");
-// let links = document.querySelector(".links");
-
-// toggle.addEventListener("click", () => {
-//   // al hacer click en la flecha..
-//   toggle.classList.toggle("rotate"); //la flecha rota hacia arriba
-//   links.classList.toggle("active"); //la lista aparece
-// });
-
 let rowProduct = document.querySelector(".cart__items");
 
 // lista de todos los productos
@@ -78,7 +68,7 @@ const showHTML = () => {
   rowProduct.innerHTML = "";
 
   let total = 0;
-  let totalOfProducts = 0;
+  let productsTotal = 0;
 
   allProducts.forEach((product) => {
     const containerProduct = document.createElement("div"); //creamos el div
@@ -97,10 +87,10 @@ const showHTML = () => {
     rowProduct.append(containerProduct);
 
     total = total + parseInt(product.quantity * product.price.slice(1)); //le sacamos el signo de peso con slice
-    totalOfProducts = totalOfProducts + product.quantity;
+    productsTotal = productsTotal + product.quantity;
   });
 
   //Agregamos el html donde dice el total:
-  countProducts.innerText = `En el carrito hay ${totalOfProducts} productos agregados`;
+  countProducts.innerText = `En el carrito hay ${productsTotal} producto/s agregados`;
   valorTotal.innerText = `Su total es: $${total}`;
 };
