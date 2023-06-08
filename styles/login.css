@@ -17,17 +17,22 @@
 .form__info {
   display: flex;
   margin: 20px;
-  padding: 20px;
+  padding: 48px;
   border: 1px solid black;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
   background-color: #c0edf3;
+  gap: 50px;
 }
 
 .form__div {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 button {
