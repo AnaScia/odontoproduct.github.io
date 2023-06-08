@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./product.css" />
+    <link rel="stylesheet" href="./styles/product.css" />
+    <link rel="shortcut icon" href="./img/icon-teeth.png" />
     <title>OdontoProduct</title>
   </head>
   <body>
@@ -13,16 +14,12 @@
         <!-- nav header -->
         <div class="nav__header">
           <a href="" class="nav__logo">OdontoProduct </a>
-          <button class="nav__botton">
-            <img class="nav__toggle" src="./logo_flecha.png" alt="" />
-          </button>
         </div>
 
         <!-- links -->
         <ul class="links">
           <li><a href="" class="links-li">Home</a></li>
-          <li><a href="" class="links-li">Card</a></li>
-          <li><a href="" class="links-li">Log In</a></li>
+          <li><a href="./login.html" class="links-li">My Account</a></li>
         </ul>
       </div>
     </nav>
@@ -34,71 +31,110 @@
         <span class="item__price">$3.000</span>
         <button class="item__button">Agregar al Carrito</button>
       </div>
+
       <div class="item">
         <span class="item__title">Caja de Guantes</span>
         <img src="./img/guantes.jpg" alt="" class="item__image" />
-        <span class="item__price">$1.500</span>
+        <span class="item__price">$1500</span>
         <button class="item__button">Agregar al Carrito</button>
       </div>
+
       <div class="item">
         <span class="item__title">Modelo de estudio</span>
         <img src="./img/modelo.jpg" alt="" class="item__image" />
-        <span class="item__price">$15.000</span>
+        <span class="item__price">$15000</span>
         <button class="item__button">Agregar al Carrito</button>
       </div>
+
       <div class="item">
         <span class="item__title">Articulador bio-Art</span>
         <img src="./img/bioart.jpg" alt="" class="item__image" />
-        <span class="item__price">$103.950</span>
+        <span class="item__price">$103950</span>
         <button class="item__button">Agregar al Carrito</button>
       </div>
+
       <div class="item">
         <span class="item__title">Articulador Gacela</span>
         <img src="./img/gacela.jpg" alt="" class="item__image" />
-        <span class="item__price">$61.185</span>
+        <span class="item__price">$61185</span>
         <button class="item__button">Agregar al Carrito</button>
       </div>
+
       <div class="item">
         <span class="item__title">Alginato</span>
         <img src="./img/alginato.jpg" alt="" class="item__image" />
-        <span class="item__price">$5.000</span>
+        <span class="item__price">$5000</span>
         <button class="item__button">Agregar al Carrito</button>
       </div>
+
       <div class="item">
         <span class="item__title">Silicona</span>
         <img src="./img/silicona.webp" alt="" class="item__image" />
-        <span class="item__price">$22.000</span>
+        <span class="item__price">$22000</span>
         <button class="item__button">Agregar al Carrito</button>
       </div>
+
       <div class="item">
         <span class="item__title">Yeso</span>
         <img src="./img/yeso_verde.jpeg" alt="" class="item__image" />
-        <span class="item__price">$1.400</span>
+        <span class="item__price">$1400</span>
         <button class="item__button">Agregar al Carrito</button>
       </div>
+
       <div class="item">
         <span class="item__title">Taza para mezclar</span>
         <img src="./img/taza.jpg" alt="" class="item__image" />
-        <span class="item__price">$1.000</span>
+        <span class="item__price">$1000</span>
         <button class="item__button">Agregar al Carrito</button>
       </div>
+
       <div class="item">
         <span class="item__title">Espatula</span>
         <img src="./img/espatula.png" alt="" class="item__image" />
         <span class="item__price">$200</span>
         <button class="item__button">Agregar al Carrito</button>
       </div>
+
       <div class="item">
         <span class="item__title">Dosificador Alginato</span>
         <img src="./img/dosificador.jpg" alt="" class="item__image" />
-        <span class="item__price">$1.000</span>
+        <span class="item__price">$1000</span>
         <button class="item__button">Agregar al Carrito</button>
       </div>
+
       <div class="item">
         <span class="item__title">Cubetas para impresion</span>
         <img src="./img/cubeta.jpeg" alt="" class="item__image" />
-        <span class="item__price">$24.000</span>
+        <span class="item__price">$24000</span>
         <button class="item__button">Agregar al Carrito</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="cart">
+        <div class="cart__title">
+          <h2>Shopping Cart</h2>
+        </div>
+
+        <div class="cart__items">
+          <div class="cart__item">
+            <div class="cart__item-details">
+              <div class="selector-cant"></div>
+              <span class="cart__item-title"></span>
+              <div class="cart__price"></div>
+              <img src="./img/basket.png" class="cart__remove" />
+            </div>
+          </div>
+        </div>
+
+        <div class="cart__total">
+          <h2>Total:</h2>
+          <span class="total__pay"></span>
+        </div>
+
+        <div class="count-products">
+          <span id="contador-productos"></span>
+        </div>
       </div>
     </section>
 
