@@ -6,11 +6,11 @@ let passLog = document.getElementById("pass_log");
 
 btnLogin.addEventListener("click", (e) => {
   e.preventDefault();
-  const data1 = {
+  const logIn = {
     email: emailLog.value,
     password: passLog.value,
   };
-  console.log(data1);
+  console.log(logIn);
   window.location.href = "./index.html";
 });
 
@@ -23,10 +23,10 @@ let passReg = document.getElementById("pass_reg");
 
 btnReg.addEventListener("click", (e) => {
   e.preventDefault();
-  const data2 = {
+  const register = {
     username: userReg.value,
     email: emailReg.value,
     password: passReg.value,
   };
-  console.log(data2);
+  console.log(register);
 });
