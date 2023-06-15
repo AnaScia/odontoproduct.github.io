@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./product.css" />
+    <link rel="stylesheet" href="./styles/product.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
     <title>OdontoProduct</title>
   </head>
   <body>
@@ -13,19 +14,60 @@
         <!-- nav header -->
         <div class="nav__header">
           <a href="" class="nav__logo">OdontoProduct </a>
-          <button class="nav__botton">
-            <img class="nav__toggle" src="./logo_flecha.png" alt="" />
-          </button>
         </div>
 
         <!-- links -->
         <ul class="links">
           <li><a href="./index.html" class="links-li">Home</a></li>
-          <li><a href="./card.html" class="links-li">Card</a></li>
-          <li><a href="./login.html" class="links-li">Log In</a></li>
+          <li><a href="./login.html" class="links-li">My Account</a></li>
         </ul>
       </div>
     </nav>
-    <script src="./product.js"></script>
+
+    <section class="section__container-account">
+      <form class="form__account">
+        <div class="form__title">
+          <h2>Login</h2>
+        </div>
+
+        <div class="form__info">
+          <div class="form__div">
+            <p>Email address</p>
+            <input type="email" name="email" id="email_log" />
+          </div>
+          <div class="form__div">
+            <p>Password</p>
+            <input type="password" name="password" id="pass_log" />
+          </div>
+          <button class="btnAccount" id="btnLogin">Login</button>
+        </div>
+      </form>
+
+      <form class="form__account">
+        <div class="form__title">
+          <h2>Register</h2>
+        </div>
+
+        <div class="form__info">
+          <div class="form__div">
+            <p>Username</p>
+            <input type="text" name="username" id="user_reg" />
+          </div>
+
+          <div class="form__div">
+            <p>Email address</p>
+            <input type="email" name="email" id="email_reg" />
+          </div>
+
+          <div class="form__div">
+            <p>Password</p>
+            <input type="password" name="password" id="pass_reg" />
+          </div>
+          <button class="btnAccount" id="btnReg" type="submit">Register</button>
+        </div>
+      </form>
+    </section>
+
+    <script src="./login.js"></script>
   </body>
 </html>
