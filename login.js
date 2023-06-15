@@ -29,4 +29,5 @@ btnReg.addEventListener("click", (e) => {
     password: passReg.value,
   };
   console.log(register);
+  window.location.href = "./index.html";
 });

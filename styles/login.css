@@ -1,5 +1,11 @@
 /* My Account */
 
+body {
+  background-image: url("../img/fondo-login.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .section__container-account {
   padding: 40px;
   margin: auto;
