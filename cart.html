@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/icon-teeth.png" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/cart.css" />
+    <title>OdontoProduct</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__container">
+        <!-- nav header -->
+        <div class="nav__header">
+          <a href="" class="nav__logo">OdontoProduct </a>
+        </div>
+
+        <!-- links -->
+        <ul class="links">
+          <li><a href="./index.html" class="links-li">Home</a></li>
+          <li><a href="./login.html" class="links-li">My Account</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+      <div class="cart">
+        <div class="cart__title">
+          <h2>Shopping Cart</h2>
+        </div>
+
+        <div class="cart__items">
+          <div class="cart__item">
+            <div class="cart__item-details">
+              <div class="selector-cant"></div>
+              <span class="cart__item-title"></span>
+              <div class="cart__price"></div>
+              <img src="./img/basket.png" class="cart__remove" />
+            </div>
+          </div>
+        </div>
+
+        <div class="cart__total">
+          <h2>Total:</h2>
+          <span class="total__pay"></span>
+        </div>
+
+        <div class="count-products">
+          <span id="contador-productos"></span>
+        </div>
+      </div>
+    </section>
+    <script src="./cart.js"></script>
+  </body>
+</html>

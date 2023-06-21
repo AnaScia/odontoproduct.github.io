@@ -12,6 +12,7 @@ btnLogin.addEventListener("click", (e) => {
   };
   console.log(logIn);
   window.location.href = "./index.html";
+  localStorage.setItem("email", emailLog.value);
 });
 
 //REGISTER
@@ -28,6 +29,14 @@ btnReg.addEventListener("click", (e) => {
     email: emailReg.value,
     password: passReg.value,
   };
+
+  if (emailReg.value == localStorage.getItem("email")) {
+    alert("Usted ya esta registrado");
+  } else {
+    window.location.href = "./index.html";
+  }
   console.log(register);
-  window.location.href = "./index.html";
+  localStorage.setItem("username", userReg.value);
 });
+
+localStorage.getItem("username");
