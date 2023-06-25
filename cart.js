@@ -18,6 +18,7 @@ const showHTML = () => {
 
       containerProduct.innerHTML = `  <div class="cart__item">
     <div class="cart__item-details">
+    <img src="${product.image}" class="cart__image" />
     <div class="selector-cant">${product.quantity}</div>
       <span class="cart__item-title">${product.title}</span>
       <div class="cart__price">${product.price}</div>

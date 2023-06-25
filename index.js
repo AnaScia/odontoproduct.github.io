@@ -20,6 +20,7 @@ productsList.addEventListener("click", (e) => {
       quantity: 1,
       title: product.querySelector(".item__title").textContent, //con textContent extraemos el contenido del div
       price: product.querySelector(".item__price").textContent,
+      image: product.querySelector(".item__image").src,
     };
     console.log(infoProduct);
 
