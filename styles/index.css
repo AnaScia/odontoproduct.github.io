@@ -8,7 +8,9 @@
 }
 
 body {
-  background-color: #ecfcff;
+  background-image: url("../img/fondo-login.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* nav */
@@ -23,6 +25,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 5px;
 }
 
 .links {
@@ -64,6 +67,12 @@ nav {
 .show-links {
   height: 10rem;
   /* al hacer click en el boton  */
+}
+
+#cart-li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* SECTION */
