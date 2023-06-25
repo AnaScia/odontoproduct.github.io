@@ -29,13 +29,13 @@ btnReg.addEventListener("click", (e) => {
     email: emailReg.value,
     password: passReg.value,
   };
+  //ternario
+  emailReg.value == localStorage.getItem("email")
+    ? alert("Usted ya esta registrado")
+    : (window.location.href = "./index.html");
 
-  if (emailReg.value == localStorage.getItem("email")) {
-    alert("Usted ya esta registrado");
-  } else {
-    window.location.href = "./index.html";
-  }
   console.log(register);
+
   localStorage.setItem("username", userReg.value);
 });
 
