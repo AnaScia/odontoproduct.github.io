@@ -3,6 +3,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.cart {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .cart__items {
   display: flex;
   justify-content: center;
@@ -11,7 +17,6 @@ body {
 .cart__title {
   display: flex;
   justify-content: center;
-  margin: 40px 800px;
   background-color: aliceblue;
 }
 
@@ -30,7 +35,6 @@ body {
 
 #cart-price {
   background-color: aliceblue;
-  margin: auto 700px;
 }
 
 .total__title {

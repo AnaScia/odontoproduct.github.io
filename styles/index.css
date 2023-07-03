@@ -21,7 +21,6 @@ nav {
 }
 
 .nav__container {
-  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,20 +29,20 @@ nav {
 
 .links {
   display: flex;
+  gap: 5px;
   padding: 0;
   list-style-type: none;
+  align-items: baseline;
 }
 
 .links-li {
   color: #ecfcff;
   text-decoration: none;
   font-family: sans-serif;
-  padding: 0px 40px;
+  padding: 0px 25px;
   font-size: 15px;
-  margin: 0 10px;
-  line-height: 80px;
+  /* line-height: 80px; */
   text-transform: uppercase;
-  width: max-content;
 }
 
 .nav__toggle {
@@ -51,6 +50,16 @@ nav {
   display: flex;
 }
 
+.nav__header {
+  display: flex;
+  align-items: center;
+}
+
+#img__logo {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
 .nav__logo {
   font-size: 200%;
   color: #009eff;
@@ -94,11 +103,13 @@ nav {
   display: flex;
   margin: 20px;
   padding: 20px;
-  border: 1px solid black;
+  border: 1px solid #009eff;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
   background-color: #c0edf3;
+  border-radius: 7px;
+  font-size: 15px;
 }
 
 .item__title {
@@ -107,4 +118,29 @@ nav {
 
 .item__price {
   margin: 20px;
+}
+
+.item__button {
+  top: 50%;
+  background-color: #009eff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 30px;
+  min-width: 120px;
+}
+
+.item__button:hover {
+  background-color: #3edbf0;
+  transition: 0.7s;
+  box-shadow: 0 0 0 1px blue;
+  outline-color: transparent;
+  outline-style: solid;
+  color: #ecfcff;
+}
+.item__button:active {
+  background-color: blue;
+  box-shadow: 0 5px blue;
+  transform: translateY(4px);
 }
